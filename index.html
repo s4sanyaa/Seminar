@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Order Diner Deluxe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quick Order Diner <span class="title-icon">🍳</span></h1>
+
+    <div id="game-container">
+        <div id="customer-area" class="game-column">
+            <h2><span class="icon">📋</span> Orders</h2>
+            <div id="order-list">
+                </div>
+        </div>
+
+        <div id="kitchen-area" class="game-column">
+             <h2><span class="icon">🧑‍🍳</span> Kitchen</h2>
+            <div id="ingredients" class="kitchen-section">
+                <h3>Ingredients</h3>
+                <div class="item ingredient" id="patty" draggable="true"><span class="icon">🍔</span> Patty</div>
+                <div class="item ingredient" id="bun" draggable="true"><span class="icon">🍞</span> Bun</div>
+                <div class="item ingredient" id="potatoes" draggable="true"><span class="icon">🥔</span> Potatoes</div>
+                <div class="item ingredient" id="cup" draggable="true"><span class="icon">🥤</span> Cup</div>
+            </div>
+
+            <div id="appliances" class="kitchen-section">
+                <h3>Appliances</h3>
+                <div class="item appliance" id="grill"><span class="icon">🔥</span> Grill</div>
+                <div class="item appliance" id="fryer"><span class="icon">🍟</span> Fryer</div>
+                <div class="item appliance" id="drink-machine"><span class="icon">💧</span> Drinks</div>
+                <div class="item appliance" id="assembly-station"><span class="icon">🍽️</span> Assembly</div>
+            </div>
+
+            <div id="prepared-area" class="kitchen-section">
+                <h3>Prepared</h3>
+                <div id="prepared-items">
+                    </div>
+            </div>
+        </div>
+
+        <div id="info-area" class="game-column">
+            <h2><span class="icon">ℹ️</span> Info</h2>
+            <div class="score-display">
+                <span class="icon">⭐</span> Score: <span id="score">0</span>
+            </div>
+            <button id="start-button">
+                <span class="icon">▶️</span> Start Game
+            </button>
+            <div id="message-area"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
